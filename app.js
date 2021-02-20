@@ -3,8 +3,7 @@ const app = express()
 const bodyParser = require('body-parser')
 const ejs = require('ejs')
 
-app.use(express.static(__dirname + 'public'))
-
+app.use(express.static(__dirname + '/public'))
 
 items = ["Item 1", "Item 2", "Item 3"]
 app.set('view engine', 'ejs');
