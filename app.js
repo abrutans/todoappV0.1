@@ -6,7 +6,7 @@ const ejs = require('ejs')
 app.use(express.static(__dirname + 'public'))
 
 
-items = ["item 1", "item2", "item3"]
+items = ["Item 1", "Item 2", "Item 3"]
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
