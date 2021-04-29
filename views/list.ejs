@@ -12,17 +12,18 @@
       
     <% for (let i=0; i < newListItems.length; i++) { %>
         
-      <div class="item" ></div>
+      <div class="item" >
       <input type="checkbox" name="">
         <p>
           <%=newListItems[i]%>
         </p>
+      </div>
         <% } %>
       </div>
   
   
   <form class="item" action="/" method="POST">
-    <input type="text" name="newItem" placeholder="New Item" autocomplete="off" >
+    <input type="text" name="newItem" required placeholder="New Item" autocomplete="off" >
     <button type="submit" name="list" value="<%=listTitle%>">+</button>
   </form>
 </div>
