@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>todoAPP</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-</head>
-
-<body>
+<%- include ('header') %> 
   <div class="box" id="heading">
-    <h1><%= day %></h1>
+    <h1><%= listTitle %></h1>
   </div>
 
   <div class="box">
     
     
-    <div>
+    
+      
+  <div>
+      
     <% for (let i=0; i < newListItems.length; i++) { %>
         
       <div class="item" ></div>
-      <input type="checkbox" name="cbox">
+      <input type="checkbox" name="">
         <p>
           <%=newListItems[i]%>
         </p>
@@ -28,10 +23,7 @@
   
   <form class="item" action="/" method="POST">
     <input type="text" name="newItem" placeholder="New Item" autocomplete="off" >
-    <button type="submit" name="button">+</button>
+    <button type="submit" name="list" value="<%=listTitle%>">+</button>
   </form>
 </div>
-
-</body>
-
-</html>
+<%- include ('footer') %> 

@@ -1,0 +1,16 @@
+ 
+module.exports = getDate;
+
+// Get specific date(dd/mm)
+function getDate() {
+let today = new Date()
+  let options = {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long'
+  };
+  day = today.toLocaleDateString("en-US", options)
+  return day 
+}
+
+ 
